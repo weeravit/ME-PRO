@@ -1,0 +1,3 @@
+rootProject.name = 'ME_PRO'
+
+include ':app'
