@@ -1,4 +1,4 @@
-import {TabNavigator} from 'react-navigation'
+import {TabNavigator, TabBarBottom} from 'react-navigation'
 import Home from './Home';
 
 const MyNavigation = TabNavigator({
@@ -6,7 +6,8 @@ const MyNavigation = TabNavigator({
         screen: Home
     }
 }, {
-    // tabBarPosition: 'bottom',
+    tabBarComponent: TabBarBottom,
+    tabBarPosition: 'bottom',
     animationEnabled: true,
     tabBarOptions: {
         activeTintColor: '#e91e63'
